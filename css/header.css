@@ -1,0 +1,39 @@
+.header {
+    align-self: flex-start;
+}
+.header__logo {
+    width: 40px;
+}
+.header__container {
+    display: none;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0 16px 32px -4px rgba(145, 158, 171, 0.12);
+}
+.header__container__head {
+    display: flex;
+    gap: 8px;
+    padding: 40px 40px 0 40px;
+}
+.header__container__logo {
+    width: 30px;
+}
+.header__title {
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+@media (min-width: 1025px) {
+    .header {
+        flex-basis: 25%;
+        height: 100%;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
